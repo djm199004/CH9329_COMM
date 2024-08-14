@@ -2,15 +2,16 @@ import serial
 from ch9329Comm import keyboard
 from ch9329Comm import mouse
 
-serial.ser = serial.Serial('COM4', 115200)  # 开启串口
+serial.ser = serial.Serial('COM7', 115200)  # 开启串口
 
-# # 键盘输出helloworld
-# dc = keyboard.DataComm()
-# dc.send_data('HHEELLLLOO')  # 按下HELLO
-# dc.release()  # 松开
+# 键盘输出helloworld
+dc = keyboard.DataComm()
+dc.send_data('HHEELLLLOO')  # 按下HELLO
+dc.release()  # 松开
 # dc.send_data('WWOORRLLDD')  # 按下WORLD
 # dc.release()  # 松开
 
+#
 
 # （绝对）鼠标移动到屏幕的左上100*100的位置
 
